@@ -1,0 +1,105 @@
+/* **  VARIABLES  ** */
+
+:root {
+  --font-size-main-heading: 36px;
+  --font-size-secondary-heading: 24px;
+  --font-size-text: 18px;
+  --font--weight-bld: 900;
+  --font-wight-reg: 400;
+  --font-stack: 'Lato', sans-serif;
+  --col-primary: #2e354f;
+  --col-secondary: #fff;
+  --col-tertiary: #ef5839;
+  --width-content: 620px;
+  --padding-header: 40px;
+  --padding-section: 30px;
+}
+
+/* **  RESET  ** */
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+.last-child {
+  margin-bottom: 0;
+}
+
+/* ** GENERAL */
+
+h1 {
+  font-size: var(--font-size-main-heading);
+}
+
+h2 {
+  font-size: var(--font-size-secondary-heading);
+  color: var(--col-tertiary);
+}
+
+p {
+  font-size: var(--font-size-text);
+  font-weight: var(--font-wight-reg);
+}
+
+section {
+  padding: var(--padding-section);
+}
+
+.section-one img {
+  margin-bottom: 18px;
+}
+
+.content-container {
+  width: var(--width-content);
+  margin: 0 auto;
+}
+
+a {
+  color: var(--col-tertiary);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+}
+
+strong {
+  font-weight: var(--font--weight-bld);
+}
+
+/* ** HEADER ** */
+
+header {
+  background-color: var(--col-primary);
+  padding: var(--padding-header);
+  color: var(--col-secondary);
+}
+
+/* ** SECTION ONE */
+
+/* ** SECTION TWO ** */
+
+.section-two {
+  color: #fff;
+  background-color: var(--col-primary);
+}
+
+.btn-primary {
+  background-color: var(--col-tertiary);
+  color: var(--col-secondary);
+}
+
+.btn-secondary {
+  background-color: var(--col-secondary);
+  margin-left: 20px;
+}
