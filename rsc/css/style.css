@@ -83,6 +83,7 @@ a:focus {
 .btn {
   display: inline-block;
   padding: 0.75em 1.5em;
+  text-decoration: none;
 }
 
 /* ** HEADER ** */
@@ -107,7 +108,27 @@ header {
   color: var(--col-secondary);
 }
 
+.btn-primary:hover,
+.btn-primary:focus {
+  border-color: var(
+    --col-secondary
+  ); /* Change to desired hover/focus border color */
+  transform: scale(1.15); /* Grow slightly on hover/focus */
+  transition: all 0.5s;
+  border-radius: 20px;
+}
+
 .btn-secondary {
   background-color: var(--col-secondary);
   margin-left: 20px;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: var(
+    --col-secondary
+  ); /* Change to desired hover/focus border color */
+  transform: scale(1.15); /* Grow slightly on hover/focus */
+  transition: all 0.5s;
+  border-radius: 20px;
 }
