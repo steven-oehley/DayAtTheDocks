@@ -1,18 +1,18 @@
 /* **  VARIABLES  ** */
 
 :root {
-  --font-size-main-heading: 36px;
-  --font-size-secondary-heading: 24px;
-  --font-size-text: 18px;
+  --font-size-main-heading: 2.25rem;
+  --font-size-secondary-heading: 1.5rem;
+  --font-size-text: 1.125rem;
   --font--weight-bld: 900;
   --font-wight-reg: 400;
   --font-stack: 'Lato', sans-serif;
   --col-primary: #2e354f;
   --col-secondary: #fff;
   --col-tertiary: #ef5839;
-  --width-content: 60%;
-  --padding-header: 2em;
-  --padding-section: 1.5em;
+  --width-content: 90%;
+  --padding-header: 2.5em;
+  --padding-section: 1.875em;
 }
 
 /* **  RESET  ** */
@@ -69,6 +69,7 @@ section {
 .content-container {
   width: var(--width-content);
   margin: 0 auto;
+  max-width: 720px;
 }
 
 a {
@@ -84,6 +85,9 @@ a:focus {
   display: inline-block;
   padding: 0.75em 1.5em;
   text-decoration: none;
+  border: none; /* Reset button border */
+  cursor: pointer; /* Ensure cursor changes on hover */
+  border: 2px solid transparent;
 }
 
 /* ** HEADER ** */
@@ -110,33 +114,34 @@ header {
 .btn-primary {
   background-color: var(--col-tertiary);
   color: var(--col-secondary);
+  border-radius: 20px;
+  transition: all 0.5s ease;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  border-color: var(
-    --col-secondary
-  ); /* Change to desired hover/focus border color */
-  transform: scale(1.15); /* Grow slightly on hover/focus */
-  transition: all 0.5s;
-  border-radius: 20px;
+  background-color: #2e354f;
+  color: var(--col-secondary); /* Ensure text color changes on hover */
+  border-color: var(--col-tertiary);
+  transform: scale(1.05); /* Add a slight scale effect */
 }
 
 .btn-secondary {
   background-color: var(--col-secondary);
-  margin-left: 20px;
+  color: #2e354f;
+  border: 2px solid transparent; /* Ensure initial border is transparent */
+  border-radius: 20px;
+  margin-left: 0.75em;
+  transition: all 0.5s ease;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  border-color: var(
-    --col-secondary
-  ); /* Change to desired hover/focus border color */
-  transform: scale(1.15); /* Grow slightly on hover/focus */
-  transition: all 0.5s;
-  border-radius: 20px;
+  background-color: #2e354f;
+  color: var(--col-secondary); /* Ensure text color changes on hover */
+  border-color: var(--col-tertiary); /* Change border color on hover */
+  transform: scale(1.05); /* Add a slight scale effect */
 }
-
 @media (max-width: 532px) {
   .btn-secondary {
     margin-left: 0;
